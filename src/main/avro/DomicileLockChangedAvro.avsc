@@ -1,0 +1,49 @@
+{
+   "namespace": "ps.customer.event.avro",
+   "type": "record",
+   "name": "DomicileLockChangedEvent",
+   "fields": [
+     {
+       "name": "customerId",
+       "type": "string"
+     },
+     {
+        "name": "changeType",
+        "type": "int"
+     },
+     {
+        "name": "changeDate",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+     },
+     {
+        "name": "accountType",
+        "type": "string"
+     },
+     {
+        "name": "creditCardBrand",
+        "type": [ "null", "string" ],
+        "default": null
+     },
+     {
+        "name": "transactionType",
+        "type": [ "null", "string" ],
+        "default": null
+     },
+     {
+        "name": "codAgency",
+        "type": [ "null", "int" ],
+        "default": null
+     },
+     {
+        "name": "codAccount",
+        "type": [ "null", "int" ],
+        "default": null
+     },
+     {
+        "name": "paymentAccount",
+        "type": [ "null", "string" ],
+        "default": null
+     }
+   ]
+}
